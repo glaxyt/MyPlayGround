@@ -14,4 +14,9 @@ export class AppController {
   login(@Body() body: any): string {
     return this.appService.login(body);
   }
+
+  @Post('sign-up')
+  signUp(@Body() body: any): any {
+    return true;
+  }
 }
